@@ -1,51 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 99.
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	int j, i;
 
-	int i, e, g, h, op1, op2;
-
-	i = e = g = h = 48;
-
-	while (h < 58)
+	for (j = 0; j <= 99; j++)
 	{
-		g = 48;
-		while (e < 58)
+		for (i = j; i <= 99; i++)
 		{
-			e = 48;
-			while (e < 58)
+			if (i != j)
 			{
-				i = 48;
-				while (i < 58)
+				putchar(j / 10 + 48);
+				putchar(j % 10 + 48);
+				putchar(' ');
+				putchar(i / 10 + 48);
+				putchar(i % 10 + 48);
+				if (j * 100 + i != 9899)
 				{
-					op1 = (h * 10) + g;
-					op2 = (e * 10) + i;
-					if (op1 < op2)
-					{
-						putchar(h);
-						putchar(g);
-						putchar(' ');
-						putchar(e);
-						putchar(i);
-						if (h == 57 && g == 56 && e == 57 && i == 57)
-						{
-							break;
-						}
-						putchar(',');
-						putchar(' ');
-					}
-					i++;
+					putchar(',');
+					putchar(' ');
 				}
-				e++;
 			}
-			g++;
 		}
-		h++;
 	}
 	putchar('\n');
 	return (0);
