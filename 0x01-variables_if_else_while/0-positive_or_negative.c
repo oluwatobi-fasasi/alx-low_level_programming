@@ -2,7 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* function to determine if a number is positive, negative or zero*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
