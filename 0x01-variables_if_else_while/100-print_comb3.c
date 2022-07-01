@@ -10,18 +10,18 @@ int main(void)
 	int i;
 	int a;
 
-	i = 0;
-	a = 0;
+	i = '0';
+	a = '0';
 
-	while (i <= 9)
+	while (i <= '9')
 	{
-		while (a <= 9)
+		while (a <= '9')
 		{
 			if (!(i > a || i == a))
 			{
 				putchar(i);
 				putchar(a);
-				if (i == 8 && a == 9)
+				if (i == '8' && a == '9')
 				{
 					putchar('\n');
 				}
@@ -33,7 +33,7 @@ int main(void)
 			}
 			a++;
 		}
-		a = 0;
+		a = '0';
 		i++;
 	}
 	return (0);
