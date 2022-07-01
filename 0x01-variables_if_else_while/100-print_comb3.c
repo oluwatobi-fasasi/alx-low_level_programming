@@ -10,26 +10,31 @@ int main(void)
 	int i;
 	int a;
 
-	i = 48;
-	a = 48;
+	i = 0;
+	a = 0;
 
-	while (a < 58)
+	while (i <= 9)
 	{
-		i = 48;
-		while (i < 58)
+		while (a <= 9)
 		{
-			putchar(a);
-			putchar(i);
-			if (i == 57 && a == 57)
+			if (!(i > a || i == a))
 			{
-				break;
+				putchar(i);
+				putchar(a);
+				if (i == 8 && a == 9)
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			putchar(',');
-			putchar(' ');
-			i++;
+			a++;
 		}
-		a++;
+		a = 0;
+		i++;
 	}
-	putchar('\n');
 	return (0);
 }
