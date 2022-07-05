@@ -3,6 +3,8 @@
 /**
  * _isalpha - Show 1 if the input is alphabet, otherwise shoe 0
  *
+ * @c: The ASCII code
+ *
  * Return: 1 for alpha 0 for ele
  */
 int _isalpha(int c)
