@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_10 - Print alphabet 10 timmes
+ * print_alphabet_x10 - Print alphabet many timmes
  *
  * Return: Always 0 (Success)
  */
@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		for(j = 97; j <= 122; j++)
+		for (j = 97; j <= 122; j++)
 		{
 			_putchar(j);
 		}
