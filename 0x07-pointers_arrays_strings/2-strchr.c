@@ -3,7 +3,7 @@
 /**
  * _strchr - function name
  * @s: string
- * @c char
+ * @c: char
  * Return: pointer
  */
 char *_strchr(char *s, char c)
