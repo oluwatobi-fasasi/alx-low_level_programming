@@ -1,18 +1,32 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - function
+ * _strstr - function
  *
- * Return: 0
+ * @haystack: s
+ * @needle: ss
+ * Return: pointers
  */
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-	char *s = "wworld of this";
-	char *f = "world";
-	char *t;
+	char *bhaystack;
+	char *pneedle;
 
-	t = _strstr(s, f);
-	printf("%s\n", t);
+	while (*haystack != '\0')
+	{
+		bhaystack = haystack;
+		pneedle = needle;
+
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+		{
+			haystack++;
+			pneedle++;
+		}
+		if (!*pneedle)
+		{
+			return (bhaystack);
+		}
+		haystack = bhaystack + 1;
+	}
 	return (0);
-}
+}	
