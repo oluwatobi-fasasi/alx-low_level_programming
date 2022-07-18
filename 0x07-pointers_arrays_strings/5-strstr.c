@@ -2,7 +2,6 @@
 
 /**
  * _strstr - function
- *
  * @haystack: s
  * @needle: ss
  * Return: pointers
@@ -29,4 +28,4 @@ char *_strstr(char *haystack, char *needle)
 		haystack = bhaystack + 1;
 	}
 	return (0);
-}	
+}
