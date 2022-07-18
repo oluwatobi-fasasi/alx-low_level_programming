@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * strspn - function
- * @s: s
- * @accept: accept
- * Return: return
+ * _strspn - function
+ * @s: section
+ * @accept: bytes
+ * Return: value
  */
 unsigned int _strspn(char *s, char *accept)
 {
