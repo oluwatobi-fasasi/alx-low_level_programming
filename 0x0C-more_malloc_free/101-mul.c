@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
@@ -29,9 +28,7 @@ int _strlen(char *s)
 	int i = 0;
 
 	while (s[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 /**
