@@ -13,6 +13,7 @@ int op_add(int a, int b)
 }
 
 /**
+ * op_sub - subctracts two numbers
  * @a: first number.
  * @b: second number.
  *
